@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: cosmetics-service
-          image: 438456517868.dkr.ecr.ap-south-1.amazonaws.com/cosmetics-service:sit-42
+          image: 438456517868.dkr.ecr.ap-south-1.amazonaws.com/cosmetics-service:sit-43
           ports:
             - containerPort: 5001
