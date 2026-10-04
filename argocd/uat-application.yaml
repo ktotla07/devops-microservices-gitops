@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: microservices-uat
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/ktotla07/devops-microservices-gitops.git
+    targetRevision: main
+    path: k8s/uat
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: microservices-uat
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
