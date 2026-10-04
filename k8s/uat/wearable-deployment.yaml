@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: wearable-service
-          image: 438456517868.dkr.ecr.ap-south-1.amazonaws.com/wearable-service:uat-48
+          image: 438456517868.dkr.ecr.ap-south-1.amazonaws.com/wearable-service:uat-49
           ports:
             - containerPort: 5000
